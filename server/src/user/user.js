@@ -50,7 +50,7 @@ Router.post("/signup", async (req, res) => {
 	console.log(req.body);
 
 	const result = await User.findOne({
-		username: req.body.username,
+		useremail: req.body.useremail,
 		password: req.body.password,
 	});
 	//res.send({ result, status: "success" });
