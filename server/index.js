@@ -11,14 +11,7 @@ const Request = require("./src/requests/requests");
 
 dotenv.config();
 const app = express();
-app.use(
-	cors({
-		origin: [
-			"http://localhost:3000",
-			"https://smart-india-hackathon-project.vercel.app/",
-		],
-	})
-);
+app.use(cors());
 app.use(BodyParser.json());
 app.use(BodyParser.urlencoded({ extended: false }));
 // console.log(process.env.Mongo_URL)
