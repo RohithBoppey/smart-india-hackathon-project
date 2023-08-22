@@ -13,7 +13,10 @@ dotenv.config();
 const app = express();
 app.use(
 	cors({
-		origin: ["http://localhost:3000"],
+		origin: [
+			"http://localhost:3000",
+			"https://smart-india-hackathon-project.vercel.app/",
+		],
 	})
 );
 app.use(BodyParser.json());
@@ -31,7 +34,7 @@ mongoose
 	.catch((err) => console.log(err.reason))
 	.then(
 		app.listen(5000, (e) => {
-			console.log('Listening to port 5000');
+			console.log("Listening to port 5000");
 			console.log("connected to the database");
 		})
 	);
