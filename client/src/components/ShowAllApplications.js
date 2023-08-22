@@ -16,7 +16,7 @@ const ShowAllApplications = (props) => {
 	const [allPlayfieldRequests, setAllPlayfieldRequests] = useState([]);
 
 	const getAllRequests = async (req, res) => {
-		await Axios.post(`http://localhost:5000/requests/getallrequests`, {
+		await Axios.post(`https://khelo-india.onrender.com/requests/getallrequests`, {
 			email: user.useremail,
 		}).then((response) => {
 			// console.log(response.data);

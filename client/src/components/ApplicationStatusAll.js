@@ -22,7 +22,7 @@ const ApplicationStatusAll = () => {
 
 	const getAllRequests = async () => {
 		const response = await Axios.get(
-			"http://localhost:5000/requests/getallrequests"
+			"https://khelo-india.onrender.com/requests/getallrequests"
 		);
 		// console.log(response.data);
 		setAllGroundRequests(
@@ -81,7 +81,7 @@ const ApplicationStatusAll = () => {
 
 	const Handler = async (req_type, status, id) => {
 		const response = await Axios.post(
-			"http://localhost:5000/requests/change_status",
+			"https://khelo-india.onrender.com/requests/change_status",
 			{
 				req_type: req_type,
 				change_status_to: status,

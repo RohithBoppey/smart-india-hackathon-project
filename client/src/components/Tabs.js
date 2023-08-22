@@ -51,7 +51,7 @@ const Tabs = () => {
 		console.log(temp);
 
 		const res = await Axios.post(
-			"http://localhost:5000/requests/newRequest",
+			"https://khelo-india.onrender.com/requests/newRequest",
 			{
 				request_type: "get_grounds",
 				useremail: user.useremail,
@@ -97,7 +97,7 @@ const Tabs = () => {
 		console.log(temp);
 
 		const result = await Axios.post(
-			"http://localhost:5000/requests/newRequest",
+			"https://khelo-india.onrender.com/requests/newRequest",
 			{
 				request_type: "get_equipment",
 				useremail: user.useremail,
@@ -133,7 +133,7 @@ const Tabs = () => {
 		console.log(temp);
 
 		const result = await Axios.post(
-			"http://localhost:5000/requests/newRequest",
+			"https://khelo-india.onrender.com/requests/newRequest",
 			{
 				request_type: "get_playfield",
 				useremail: user.useremail,

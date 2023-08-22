@@ -32,7 +32,7 @@ const Signup = (props) => {
 
 		console.log(temp);
 
-		const response = await Axios.post('http://localhost:5000/user/signup', {
+		const response = await Axios.post('https://khelo-india.onrender.com/user/signup', {
 			useremail : useremailRef.current.value,
 			password : passwordRef.current.value,
 			designation : designationRef.current.value,

@@ -18,7 +18,7 @@ function Login(props) {
 		event.preventDefault();
 
 		Axios.post(
-			`http://localhost:5000/${
+			`https://khelo-india.onrender.com/${
 				props.value === "Admin" ? "admin" : "user"
 			}/login`,
 			{
@@ -88,6 +88,7 @@ function Login(props) {
 								className="form-control"
 								placeholder="  xyz@gmail.com"
 								required="required"
+								defaultValue={props.value === 'Admin' ? 'r@g.com' : ''}
 							/>
 						</div>
 						<div className="form-group">
@@ -98,6 +99,7 @@ function Login(props) {
 								className="form-control"
 								placeholder="  Password"
 								required="required"
+								defaultValue={props.value === 'Admin' ? 'admin' : ''}
 							/>
 						</div>
 						<div className="forgot-password">
